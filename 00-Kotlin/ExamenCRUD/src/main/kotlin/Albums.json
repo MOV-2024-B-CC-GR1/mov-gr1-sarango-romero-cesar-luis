@@ -1,0 +1,41 @@
+[
+  {
+    "id": 1,
+    "nombre": "John Doe",
+    "fechaNacimiento": "1980-01-01",
+    "paisOrigen": "USA",
+    "activo": true,
+    "albums": [
+      {
+        "id": 1,
+        "titulo": "Album 1",
+        "fechaLanzamiento": "2023-01-01",
+        "genero": "Rock",
+        "artistaId": 1
+      },
+      {
+        "id": 2,
+        "titulo": "Album 2",
+        "fechaLanzamiento": "2023-02-02",
+        "genero": "Pop",
+        "artistaId": 1
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "nombre": "Jane Smith",
+    "fechaNacimiento": "1990-02-02",
+    "paisOrigen": "UK",
+    "activo": true,
+    "albums": [
+      {
+        "id": 3,
+        "titulo": "Album 3",
+        "fechaLanzamiento": "2023-03-03",
+        "genero": "Jazz",
+        "artistaId": 2
+      }
+    ]
+  }
+]
