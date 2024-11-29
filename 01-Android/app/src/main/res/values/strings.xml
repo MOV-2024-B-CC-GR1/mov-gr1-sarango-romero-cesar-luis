@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">ccgr12024b_clsr</string>
+    <string name="saludo">LANDS ES</string>
+    <color name="texto_color">#D93535</color>
+    <color name="background">#39753B</color>
+</resources>
