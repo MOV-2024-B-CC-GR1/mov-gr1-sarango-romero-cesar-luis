@@ -1,0 +1,2 @@
+com.example.ccgr12024b_clsr.test:style/WhiteBackgroundTheme = 0x7f010001
+com.example.ccgr12024b_clsr.test:style/WhiteBackgroundDialogTheme = 0x7f010000
