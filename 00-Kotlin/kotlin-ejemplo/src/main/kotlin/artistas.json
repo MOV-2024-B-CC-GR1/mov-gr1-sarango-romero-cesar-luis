@@ -1,0 +1,9 @@
+[
+  {
+    "id": 1,
+    "nombre": "John Doe",
+    "fechaNacimiento": "1980-01-01",
+    "paisOrigen": "Ecuador",
+    "activo": true
+  }
+]
