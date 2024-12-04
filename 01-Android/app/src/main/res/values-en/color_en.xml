@@ -1,5 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ccgr12024b_clsr</string>
     <string name="saludo">Hello friends</string>
-    <color name="saludo_color">#B42D2D</color>
+    <color name="saludo_color">#0F19B4</color>
 </resources>
