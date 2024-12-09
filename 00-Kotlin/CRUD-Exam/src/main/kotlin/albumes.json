@@ -1,0 +1,57 @@
+[
+    {
+        "id": 1,
+        "titulo": "1989 (Taylor's Version)",
+        "fechaLanzamiento": "2023-10-27",
+        "genero": "Pop",
+        "ventasTotales": 1500000.0,
+        "precioVenta": 29.99,
+        "disponibleStreaming": true,
+        "numeroCanciones": 21,
+        "artistaId": 1
+    },
+    {
+        "id": 2,
+        "titulo": "Midnights",
+        "fechaLanzamiento": "2022-10-21",
+        "genero": "Pop/Alternative",
+        "ventasTotales": 1800000.0,
+        "precioVenta": 24.99,
+        "disponibleStreaming": true,
+        "numeroCanciones": 13,
+        "artistaId": 1
+    },
+    {
+        "id": 4,
+        "titulo": "Un Verano Sin Ti",
+        "fechaLanzamiento": "2022-05-06",
+        "genero": "Reggaeton",
+        "ventasTotales": 2000000.0,
+        "precioVenta": 19.99,
+        "disponibleStreaming": true,
+        "numeroCanciones": 23,
+        "artistaId": 2
+    },
+    {
+        "id": 6,
+        "titulo": "Thriller",
+        "fechaLanzamiento": "1982-11-30",
+        "genero": "Pop",
+        "ventasTotales": 7.0E7,
+        "precioVenta": 15.99,
+        "disponibleStreaming": true,
+        "numeroCanciones": 9,
+        "artistaId": 3
+    },
+    {
+        "id": 7,
+        "titulo": "Angel",
+        "fechaLanzamiento": "2002-09-12",
+        "genero": "Rock",
+        "ventasTotales": 5888.0,
+        "precioVenta": 8.9,
+        "disponibleStreaming": true,
+        "numeroCanciones": 12,
+        "artistaId": 5
+    }
+]

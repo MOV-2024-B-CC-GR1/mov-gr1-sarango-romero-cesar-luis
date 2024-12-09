@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "nombre": "Taylor Swift",
+        "fechaNacimiento": "1989-12-13",
+        "paisOrigen": "Estados Unidos",
+        "generoMusical": "Pop",
+        "activo": true,
+        "numeroPremisos": 11,
+        "calificacion": 4.9,
+        "albumesIds": [
+            1,
+            2,
+            3
+        ]
+    },
+    {
+        "id": 2,
+        "nombre": "Bad Bunny",
+        "fechaNacimiento": "1994-03-10",
+        "paisOrigen": "Puerto Rico",
+        "generoMusical": "Reggaeton",
+        "activo": true,
+        "numeroPremisos": 8,
+        "calificacion": 4.7,
+        "albumesIds": [
+            4,
+            5
+        ]
+    },
+    {
+        "id": 3,
+        "nombre": "Michael Jackson",
+        "fechaNacimiento": "1958-08-29",
+        "paisOrigen": "Estados Unidos",
+        "generoMusical": "Pop",
+        "activo": false,
+        "numeroPremisos": 13,
+        "calificacion": 5.0,
+        "albumesIds": [
+            6,
+            7,
+            8
+        ]
+    },
+    {
+        "id": 4,
+        "nombre": "Ariana",
+        "fechaNacimiento": "2000-05-12",
+        "paisOrigen": "Panama",
+        "generoMusical": "Rock",
+        "activo": false,
+        "numeroPremisos": 1,
+        "calificacion": 4.9
+    },
+    {
+        "id": 5,
+        "nombre": "Karla",
+        "fechaNacimiento": "2024-06-23",
+        "paisOrigen": "Guatemala",
+        "generoMusical": "Rock",
+        "activo": true,
+        "numeroPremisos": 3,
+        "calificacion": 4.3
+    }
+]
