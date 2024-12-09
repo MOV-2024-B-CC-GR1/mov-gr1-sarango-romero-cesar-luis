@@ -52,5 +52,15 @@
         "activo": false,
         "numeroPremisos": 1,
         "calificacion": 4.9
+    },
+    {
+        "id": 5,
+        "nombre": "Karla",
+        "fechaNacimiento": "2024-06-23",
+        "paisOrigen": "Guatemala",
+        "generoMusical": "Rock",
+        "activo": true,
+        "numeroPremisos": 3,
+        "calificacion": 4.3
     }
 ]
