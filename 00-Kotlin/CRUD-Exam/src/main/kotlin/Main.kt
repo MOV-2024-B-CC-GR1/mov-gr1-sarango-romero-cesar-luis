@@ -60,7 +60,7 @@ fun leerArtistas(): List<Artista> {
         prettyPrint = true
         ignoreUnknownKeys = true
     }
-    val archivoArtistas = File("src/main/kotlin/artistas.json")
+    val archivoArtistas = File("D:\\7mo semestre\\Aplicciones Mobiles\\mov-gr1-sarango-romero-cesar-luis\\00-Kotlin\\CRUD-Exam\\src\\main\\kotlin\\artistas.json")
     return if (archivoArtistas.exists()) {
         try {
             json.decodeFromString<List<Artista>>(archivoArtistas.readText())
@@ -77,7 +77,7 @@ fun leerArtistas(): List<Artista> {
 
 fun guardarArtistas(artistas: List<Artista>) {
     val json = Json { prettyPrint = true }
-    val archivoArtistas = File("src/main/kotlin/artistas.json")
+    val archivoArtistas = File("D:\\7mo semestre\\Aplicciones Mobiles\\mov-gr1-sarango-romero-cesar-luis\\00-Kotlin\\CRUD-Exam\\src\\main\\kotlin\\artistas.json")
     try {
         archivoArtistas.writeText(json.encodeToString(artistas))
     } catch (e: Exception) {
@@ -90,7 +90,7 @@ fun leerAlbumes(): List<Album> {
         prettyPrint = true
         ignoreUnknownKeys = true
     }
-    val archivoAlbumes = File("src/main/kotlin/albumes.json")
+    val archivoAlbumes = File("D:\\7mo semestre\\Aplicciones Mobiles\\mov-gr1-sarango-romero-cesar-luis\\00-Kotlin\\CRUD-Exam\\src\\main\\kotlin\\albumes.json")
     return if (archivoAlbumes.exists()) {
         try {
             json.decodeFromString<List<Album>>(archivoAlbumes.readText())
@@ -107,7 +107,7 @@ fun leerAlbumes(): List<Album> {
 
 fun guardarAlbumes(albumes: List<Album>) {
     val json = Json { prettyPrint = true }
-    val archivoAlbumes = File("src/main/kotlin/albumes.json")
+    val archivoAlbumes = File("D:\\7mo semestre\\Aplicciones Mobiles\\mov-gr1-sarango-romero-cesar-luis\\00-Kotlin\\CRUD-Exam\\src\\main\\kotlin\\albumes.json")
     try {
         archivoAlbumes.writeText(json.encodeToString(albumes))
     } catch (e: Exception) {
