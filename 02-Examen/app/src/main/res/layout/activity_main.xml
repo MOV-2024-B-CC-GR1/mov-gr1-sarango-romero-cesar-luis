@@ -2,14 +2,15 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#A3ADB3B8"
     android:orientation="vertical"
     android:padding="20dp">
 
+    <!-- Título -->
     <TextView
         android:id="@+id/textViewTitulo"
         android:layout_width="wrap_content"
-        android:layout_height="102dp"
+        android:layout_height="93dp"
         android:layout_gravity="center"
         android:paddingBottom="10dp"
         android:text="Gestión de Álbumes"
@@ -17,102 +18,182 @@
         android:textSize="24sp"
         android:textStyle="bold" />
 
-    <EditText
-        android:id="@+id/editTextNombre"
+    <!-- Fila 1: Nombre y Artista -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_background"
-        android:hint="Nombre del álbum"
-        android:inputType="text"
-        android:padding="10dp" />
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
 
-    <EditText
-        android:id="@+id/editTextArtista"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_background"
-        android:baselineAligned="false"
-        android:hint="Artista"
-        android:inputType="text" />
+        android:weightSum="2">
 
-    <EditText
-        android:id="@+id/editTextId"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_background"
-        android:hint="ID del álbum"
-        android:inputType="number"
-        android:padding="10dp" />
+        <EditText
+            android:id="@+id/editTextArtista"
+            android:layout_width="8dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Artista"
+            android:inputType="text"
+            android:padding="10dp" />
 
-    <EditText
-        android:id="@+id/editTextPrecio"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_background"
-        android:hint="Precio"
-        android:inputType="numberDecimal"
-        android:padding="10dp" />
+        <EditText
+            android:id="@+id/editTextCantidad"
+            android:layout_width="10dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Cantidad"
+            android:inputType="number"
+            android:padding="10dp" />
+    </LinearLayout>
 
-    <EditText
-        android:id="@+id/editTextCantidad"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/edittext_background"
-        android:hint="Cantidad"
-        android:inputType="number"
-        android:padding="10dp" />
-
-    <EditText
-        android:id="@+id/editTextLatitud"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Latitud"
-        android:padding="10dp"
-        android:inputType="numberDecimal|numberSigned" />
-
-    <EditText
-        android:id="@+id/editTextLongitud"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:hint="Longitud"
-        android:padding="10dp"
-        android:inputType="numberDecimal|numberSigned" />
-    <Button
-        android:id="@+id/buttonGuardarAlbum"
+    <!-- Fila 2: ID y Precio -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@color/purple_500"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/editTextId"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="ID del álbum"
+            android:inputType="number"
+            android:padding="10dp" />
+
+        <EditText
+            android:id="@+id/editTextPrecio"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Precio"
+            android:inputType="numberDecimal"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- Fila 3: Cantidad y Latitud -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <EditText
+            android:id="@+id/editTextNombre"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_background"
+            android:hint="Nombre del álbum"
+            android:inputType="text"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+    <!-- Fila 4: Longitud -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <EditText
+            android:id="@+id/editTextLongitud"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="5dp"
+            android:layout_weight="1"
+            android:hint="Longitud"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <EditText
+            android:id="@+id/editTextLatitud"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1"
+            android:hint="Latitud"
+            android:inputType="numberDecimal|numberSigned" />
+
+        <!-- Espacio vacío para mantener el diseño -->
+        <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Botones -->
+
+    <Button
+        android:id="@+id/buttonGuardarAlbum"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="55pt"
+        android:backgroundTint="#AB5D176A"
         android:text="GUARDAR ÁLBUM"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:typeface="serif" />
 
     <Button
         android:id="@+id/buttonMostrarAlbums"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="55pt"
         android:layout_marginTop="5dp"
-        android:backgroundTint="@color/teal_700"
+        android:backgroundTint="#AB5D176A"
         android:text="MOSTRAR ÁLBUMES"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:typeface="serif" />
 
     <Button
         android:id="@+id/buttonActualizarAlbum"
-        android:layout_width="match_parent"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="55pt"
         android:layout_marginTop="5dp"
-        android:backgroundTint="@color/blue_700"
+        android:backgroundTint="#AB5D176A"
         android:text="ACTUALIZAR ÁLBUM"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:typeface="serif" />
 
     <Button
         android:id="@+id/buttonEliminarAlbum"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
-        android:backgroundTint="@color/red_500"
+        android:backgroundTint="#E1A90734"
         android:text="ELIMINAR ÁLBUM"
-        android:textColor="@color/white" />
+        android:textColor="@color/white"
+        android:typeface="sans" />
 
+    <!-- Mapa -->
+
+    <Button
+        android:id="@+id/buttonMapa"
+        android:layout_width="300dp"
+        android:layout_height="58dp"
+        android:layout_marginHorizontal="80dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#D61D9923"
+        android:foregroundTint="#9BD59D"
+        android:text="Ver Mapa" />
+
+    <!-- Álbumes guardados -->
     <TextView
         android:id="@+id/textViewAlbums"
         android:layout_width="match_parent"
@@ -123,11 +204,5 @@
         android:text="Álbumes guardados aparecerán aquí"
         android:textColor="@color/black"
         android:textSize="16sp" />
-    <Button
-        android:id="@+id/buttonMapa"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Ver Mapa" />
 
 </LinearLayout>
-

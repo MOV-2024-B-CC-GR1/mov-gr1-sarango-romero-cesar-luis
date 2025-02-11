@@ -33,6 +33,9 @@ class MapaActivity : AppCompatActivity(), OnMapReadyCallback {
     override fun onMapReady(map: GoogleMap) {
         googleMap = map
 
+        // Habilitar gestos de zoom
+        googleMap.uiSettings.isZoomGesturesEnabled = true
+        googleMap.uiSettings.isZoomControlsEnabled = true
         // Verificar si las coordenadas son válidas
         if (latitud != 0.0 && longitud != 0.0) {
             val ubicacion = LatLng(latitud, longitud)
